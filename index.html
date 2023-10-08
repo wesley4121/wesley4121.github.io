@@ -3,31 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>黑底網頁</title>
-    <style>
-        /* 使用 CSS 設定背景為黑色 */
-        body {
-            background-color: black;
-            color: white; /* 文字顏色設為白色 */
-            font-family: Arial, sans-serif; /* 字體設定 */
-            text-align: center; /* 文字置中對齊 */
-            padding: 20px; /* 頁面內側邊距 */
-        }
-
-        /* 標題的樣式 */
-        h1 {
-            font-size: 36px; /* 標題字體大小 */
-        }
-
-        /* 段落的樣式 */
-        p {
-            font-size: 18px; /* 段落字體大小 */
-        }
-    </style>
+    <title>待辦事項清單</title>
 </head>
 <body>
-    <h1>歡迎來到我的黑底網頁</h1>
-    <p>這是一個簡單的示例網頁，使用黑色背景。</p>
-    <p>你可以根據需要添加更多內容或自訂樣式。</p>
+    <h1>我的待辦事項清單</h1>
+    <input type="text" id="task" placeholder="輸入待辦事項">
+    <button onclick="addTask()">添加</button>
+    <ul id="taskList">
+    </ul>
+    <script src="script.js"></script>
 </body>
 </html>
